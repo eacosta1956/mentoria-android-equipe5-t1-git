@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mentoria_Android_T1_E5_Git"
         tools:targetApi="31">
+        <activity android:name=".InicialRestaurantesActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
