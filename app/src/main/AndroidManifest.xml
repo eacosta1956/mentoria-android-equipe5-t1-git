@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".InicialRestaurantesActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".DetalhesRestauranteActivity"/>
     </application>
 
 </manifest>
