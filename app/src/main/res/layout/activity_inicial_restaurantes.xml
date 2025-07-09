@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="8dp">
 
@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/img_topo" />
 
+        <!-- Banner Promocional -->
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
@@ -46,8 +47,6 @@
             <!-- Adicione as outras categorias aqui -->
         </GridLayout>
 
-
-        <!-- Banner Promocional -->
 
         <!-- Título Lojas -->
         <TextView
@@ -123,6 +122,63 @@
         </LinearLayout>
 
         <!-- Restaurante 2 - Outback -->
+        <LinearLayout
+            android:id="@+id/cardOutback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/outback"
+                android:contentDescription="Logo Outback"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outback Steakhouse"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 4.2  • Churrascaria • 2km"
+                    android:textSize="14sp"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30-45min • R$ 14,99"
+                    android:textSize="14sp"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="top"
+                android:src="@drawable/icone_favorito_cinza"
+                android:contentDescription="Favoritar" />
+        </LinearLayout>
 
         <!-- Restaurante 3 - Pizza Hut -->
         <LinearLayout
