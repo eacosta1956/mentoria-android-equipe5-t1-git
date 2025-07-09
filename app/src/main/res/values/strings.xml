@@ -3,4 +3,32 @@
     <string name="hint_email">Digite seu e-mail</string>
     <string name="hint_senha">Digite sua senha</string>
     <string name="botao_entrar">Entrar</string>
+
+    <string name="incremento_descricao">Incremente seu lanche com esse adicional</string>
+    <string name="preco_total">R$ 50,00</string>
+    <string name="qtd_zero">0</string>
+    <string name="btn_confirmar">CONFIRMAR</string>
+    <string name="btn_voltar">Botão que volta para a tela Anterior</string>
+
+    <string name="imgComboLanche">Imagem de um combo contendo um lanche, batatas chips e um Milk-Shake</string>
+    <string name="txtTituloProduto">Combo Hamburguer + Batata + MilkShake</string>
+    <string name="txtDescricaoProduto">Combo completo para animar o seu final de semana</string>
+
+    <string name="txtTituloBarraCinza">Escolha opcionais</string>
+    <string name="txtDescricaoBarraCinza">Selecione opcionais abaixo para complementar</string>
+
+    <string name="txtTituloBacon">Bacon</string>
+    <string name="txtValorBacon">R$ 10,00</string>
+    <string name="imgBacon">Imagem de um Bacon Fatiado</string>
+    <string name="imgBotaoMenos_Bc">Botão que diminue a quantidade de Bacon no lanche</string>
+    <string name="imgBotaoMais_Bc">Botão que aumenta a quantidade de Bacon no lanche</string>
+
+    <string name="txtTituloQueijo">Queijo Mussarela</string>
+    <string name="txtValorQueijo">R$ 8,00</string>
+    <string name="imgQuejio">Imagem do Queijo Mussarela cortada em fatias</string>
+    <string name="imgBotaoMenos_Qj">Botão que diminue a quantidade de Queijo no lanche</string>
+    <string name="imgBotaoMais_Qj">Botão que aumenta a quantidade de Queijo no lanche</string>
+
+    <string name="imgBotaoMenos_Total">Botão que diminue a quantidade de combos desejada </string>
+    <string name="imgBotaoMais_Total">Botão que aumenta a quantidade de combos desejada</string>
 </resources>
