@@ -8,4 +8,325 @@
     android:layout_height="match_parent"
     tools:context=".DetalhesProdutoActivity">
 
+  <ImageView
+      android:id="@+id/imgComboLanche"
+      android:layout_width="410dp"
+      android:layout_height="213dp"
+      android:layout_marginStart="4dp"
+      android:layout_marginEnd="4dp"
+      android:contentDescription="@string/imgComboLanche"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/hamburguer_batata_milk_shake" />
+
+  <ImageButton
+      android:id="@+id/btnVoltar"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_margin="16dp"
+      android:layout_marginStart="2dp"
+      android:layout_marginTop="2dp"
+      android:background="@drawable/circle_white_bg"
+      android:contentDescription="@string/btn_voltar"
+      android:elevation="8dp"
+      android:src="@drawable/ic_arrow_back"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <TextView
+      android:id="@+id/txtTituloProduto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:text="@string/txtTituloProduto"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imgComboLanche" />
+
+  <TextView
+      android:id="@+id/txtDescricaoProduto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="@string/txtDescricaoProduto"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtTituloProduto" />
+
+  <TextView
+      android:id="@+id/txtValorTotalProduto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:text="@string/preco_total"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtDescricaoProduto" />
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/barraCinza"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="8dp"
+      android:background="@color/material_dynamic_neutral90"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtValorTotalProduto" />
+
+  <TextView
+      android:id="@+id/txtTituloBarraCinza"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="4dp"
+      android:text="@string/txtTituloBarraCinza"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/barraCinza"
+      app:layout_constraintTop_toTopOf="@+id/barraCinza" />
+
+  <TextView
+      android:id="@+id/txtDescricaoBarraCinza"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="4dp"
+      android:text="@string/txtDescricaoBarraCinza"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="@+id/barraCinza"
+      app:layout_constraintTop_toBottomOf="@+id/txtTituloBarraCinza" />
+
+  <TextView
+      android:id="@+id/txtTituloBacon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/txtTituloBacon"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/barraCinza" />
+
+  <TextView
+      android:id="@+id/txtDescricaoBacon"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="2dp"
+      android:text="@string/incremento_descricao"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtTituloBacon" />
+
+  <TextView
+      android:id="@+id/txtValorBacon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      android:text="@string/txtValorBacon"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtDescricaoBacon" />
+
+  <ImageView
+      android:id="@+id/imgBacon"
+      android:layout_width="90dp"
+      android:layout_height="90dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="16dp"
+      android:contentDescription="@string/imgBacon"
+      app:layout_constraintStart_toEndOf="@+id/txtDescricaoBacon"
+      app:layout_constraintTop_toBottomOf="@+id/barraCinza"
+      app:srcCompat="@drawable/bacon" />
+
+  <ImageButton
+      android:id="@+id/imgBotaoMenosBc"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="32dp"
+      android:backgroundTint="#FFFFFF"
+      android:contentDescription="@string/imgBotaoMenos_Bc"
+      android:src="@drawable/ic_embaixo"
+      app:layout_constraintStart_toEndOf="@+id/imgBacon"
+      app:layout_constraintTop_toBottomOf="@+id/barraCinza" />
+
+  <TextView
+      android:id="@+id/txtZeroBacon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="2dp"
+      android:layout_marginTop="36dp"
+      android:layout_marginEnd="2dp"
+      android:text="@string/qtd_zero"
+      android:textSize="28sp"
+      app:layout_constraintEnd_toStartOf="@+id/imgBotaoMaisBc"
+      app:layout_constraintStart_toEndOf="@+id/imgBotaoMenosBc"
+      app:layout_constraintTop_toBottomOf="@+id/barraCinza" />
+
+  <ImageButton
+      android:id="@+id/imgBotaoMaisBc"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="8dp"
+      android:backgroundTint="#FFFFFF"
+      android:contentDescription="@string/imgBotaoMais_Bc"
+      android:src="@drawable/ic_emcima"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/barraCinza" />
+
+  <TextView
+      android:id="@+id/txtTituloQueijo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/txtTituloQueijo"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtValorBacon" />
+
+  <TextView
+      android:id="@+id/txtDescricaoQueijo"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="2dp"
+      android:text="@string/incremento_descricao"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtTituloQueijo" />
+
+  <TextView
+      android:id="@+id/txtValorQueijo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      android:text="@string/txtValorQueijo"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtDescricaoQueijo" />
+
+  <ImageView
+      android:id="@+id/imgQueijo"
+      android:layout_width="90dp"
+      android:layout_height="90dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="32dp"
+      android:contentDescription="@string/imgQuejio"
+      app:layout_constraintStart_toEndOf="@+id/txtDescricaoQueijo"
+      app:layout_constraintTop_toBottomOf="@+id/imgBacon"
+      app:srcCompat="@drawable/queijo" />
+
+  <ImageButton
+      android:id="@+id/imgBotaoMenosQj"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="52dp"
+      android:backgroundTint="#FFFFFF"
+      android:contentDescription="@string/imgBotaoMenos_Qj"
+      app:layout_constraintStart_toEndOf="@+id/imgQueijo"
+      app:layout_constraintTop_toBottomOf="@+id/imgBacon"
+      app:srcCompat="@drawable/ic_embaixo" />
+
+  <TextView
+      android:id="@+id/txtZeroQueijo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="2dp"
+      android:layout_marginTop="56dp"
+      android:layout_marginEnd="2dp"
+      android:text="@string/qtd_zero"
+      android:textSize="28sp"
+      app:layout_constraintEnd_toStartOf="@+id/imgBotaoMaisQj"
+      app:layout_constraintStart_toEndOf="@+id/imgBotaoMenosQj"
+      app:layout_constraintTop_toBottomOf="@+id/imgBacon" />
+
+  <ImageButton
+      android:id="@+id/imgBotaoMaisQj"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="52dp"
+      android:layout_marginEnd="8dp"
+      android:backgroundTint="#FFFFFF"
+      android:contentDescription="@string/imgBotaoMais_Qj"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imgBacon"
+      app:srcCompat="@drawable/ic_emcima" />
+
+  <ImageButton
+      android:id="@+id/imgBotaoMenosTotal"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#FFFFFF"
+      android:contentDescription="@string/imgBotaoMenos_Total"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/ic_embaixo" />
+
+  <TextView
+      android:id="@+id/txtZeroTotal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="4dp"
+      android:layout_marginEnd="2dp"
+      android:layout_marginBottom="20dp"
+      android:text="@string/qtd_zero"
+      android:textSize="28sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/imgBotaoMaisTotal"
+      app:layout_constraintStart_toEndOf="@+id/imgBotaoMenosTotal" />
+
+  <ImageButton
+      android:id="@+id/imgBotaoMaisTotal"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#FBFBFB"
+      android:contentDescription="@string/imgBotaoMais_Total"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/txtValorTotal"
+      app:srcCompat="@drawable/ic_emcima" />
+
+  <TextView
+      android:id="@+id/txtValorTotal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="24dp"
+      android:text="@string/preco_total"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/btnConfirmar" />
+
+  <Button
+      android:id="@+id/btnConfirmar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#FF0000"
+      android:text="@string/btn_confirmar"
+      android:textColor="#FFFFFF"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
   </androidx.constraintlayout.widget.ConstraintLayout>
