@@ -1,20 +1,29 @@
 package com.example.mentoria_android_t1_e5_git
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 
 class DetalhesProdutoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         setContentView(R.layout.activity_detalhes_produto)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val botaoConfirmar = findViewById<Button>(R.id.btnConfirmar)
+        botaoConfirmar.setOnClickListener {
+            val intent = Intent(this, ConfirmacaoPedidoActivity::class.java)
+            startActivity(intent)
+        }
+
+        val botaoVoltar = findViewById<ImageButton>(R.id.btnVoltar)
+        botaoVoltar.setOnClickListener {
+            val intent = Intent(this, DetalhesRestauranteActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
