@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFFFFF">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <!--  Capa do restaurante + botão voltar  -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Imagem de capa (ajustada com altura fixa e sem corte) -->
+            <ImageView
+                android:id="@+id/imgCapa"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/background" />
+
+            <!-- Círculo com a seta centralizada -->
+            <FrameLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="top|start"
+                android:background="@drawable/circulo_branco">
+
+                <ImageView
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Voltar" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--  Conteúdo com padding  -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <!--  Nome do restaurante e logo  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="12dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/txtNomeRestaurante" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Outback Steakhouse" android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Restaurante" android:textSize="14sp" android:textColor="#888888"/>
+                </LinearLayout>
+                <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/logo" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <!--  Destaques  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Destaques" android:textStyle="bold" android:textSize="18sp" android:layout_marginTop="16dp"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scrollbars="none">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <!--  Destaque 1  -->
+                    <LinearLayout android:orientation="vertical" android:layout_marginEnd="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="120dp" android:layout_height="100dp" android:src="@drawable/frango_especial" android:scaleType="centerCrop"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 59,90" android:textSize="14sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Frango Especial" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <!--  Destaque 2  -->
+                    <LinearLayout android:orientation="vertical" android:layout_marginEnd="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="120dp" android:layout_height="100dp" android:src="@drawable/combo" android:scaleType="centerCrop"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 20,00" android:textSize="14sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Combo Hamburguer" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <!--  Destaque 3  -->
+                    <LinearLayout android:orientation="vertical" android:layout_marginEnd="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="120dp" android:layout_height="100dp" android:src="@drawable/thunder_brownie" android:scaleType="centerCrop"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 24,90" android:textSize="14sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thunder Brownie" android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!--  Produtos  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Produtos" android:textStyle="bold" android:textSize="18sp" android:layout_marginTop="16dp"/>
+            <!--  Produto 1  -->
+            <LinearLayout android:id="@+id/layoutProduto1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#F5F5F5" android:padding="12dp" android:layout_marginTop="8dp" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:text="Big Five" android:textStyle="bold" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Os cinco aperitivos mais pedidos da casa" android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="R$ 89,90" android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/big_five" android:scaleType="centerCrop"/>
+            </LinearLayout>
+            <!--  Produto 2  -->
+            <LinearLayout android:id="@+id/layoutProduto2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#F5F5F5" android:padding="12dp" android:layout_marginTop="8dp" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:text="Hamburguer da Casa" android:textStyle="bold" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Hamburguer com batata especial da casa" android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="R$ 55,70" android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/big_five" android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
