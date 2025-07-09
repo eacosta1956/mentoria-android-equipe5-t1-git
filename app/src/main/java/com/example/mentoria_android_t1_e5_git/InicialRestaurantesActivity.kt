@@ -20,7 +20,7 @@ class InicialRestaurantesActivity : AppCompatActivity() {
         )
 
         restaurantCards.forEach { id ->
-            findViewById<LinearLayout>(id).setOnClickListener {
+            findViewById<LinearLayout>(R.id.cardOutback).setOnClickListener {
                 val intent = Intent(this, DetalhesRestauranteActivity::class.java)
                 startActivity(intent)
             }
