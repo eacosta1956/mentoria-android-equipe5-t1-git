@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_restaurante_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/image_restaurante_logo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="Logo do Restaurante" />
+
+        <TextView
+            android:id="@+id/text_restaurante_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/image_restaurante_logo"
+            app:layout_constraintTop_toTopOf="@id/image_restaurante_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Nome do Restaurante" />
+
+        <TextView
+            android:id="@+id/text_restaurante_detalhes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/text_restaurante_nome"
+            app:layout_constraintTop_toBottomOf="@id/text_restaurante_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Tipo de Cozinha • Tempo de Entrega" />
+
+        <TextView
+            android:id="@+id/text_restaurante_avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            app:drawableStartCompat="@android:drawable/btn_star_big_on"
+            app:drawableTint="@color/design_default_color_primary"
+            android:drawablePadding="4dp"
+            app:layout_constraintStart_toStartOf="@id/text_restaurante_detalhes"
+            app:layout_constraintTop_toBottomOf="@id/text_restaurante_detalhes"
+            tools:text="4.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
