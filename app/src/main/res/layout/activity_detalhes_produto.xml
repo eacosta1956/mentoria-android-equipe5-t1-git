@@ -76,7 +76,7 @@
       android:layout_marginStart="8dp"
       android:layout_marginTop="16dp"
       android:layout_marginEnd="8dp"
-      android:background="@color/material_dynamic_neutral90"
+      android:background="@color/cinza"
       android:minHeight="?attr/actionBarSize"
       android:theme="?attr/actionBarTheme"
       app:layout_constraintEnd_toEndOf="parent"
